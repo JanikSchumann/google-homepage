@@ -250,28 +250,3 @@ a:hover {
     display: none;
   }
 }
-
-@media (min-width: 381px) and (max-width: 700px) {
-  #content {
-    margin-top: 100px;
-  }
-
-  #footer_general_left,
-  #footer_general_right {
-    display: block;
-    float: none;
-    text-align: center;
-  }
-}
-
-@media (max-width: 805px) {
-  #footer_general_left {
-    float: none;
-    display: block;
-  }
-
-  #footer_general_right {
-    float: none;
-    display: block;
-  }
-}
