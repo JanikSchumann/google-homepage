@@ -7,6 +7,19 @@ body {
   justify-content: space-between;
 }
 
+a:link, a:active, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline currentcolor solid;
+}
+
+.basic_text {
+  white-space: pre;
+  font-size: 14px;
+}
+
 #header {
   width: 100%;
   padding: 16px 25px;
@@ -16,11 +29,6 @@ body {
   box-sizing: border-box;
   position: fixed;
   top: 0px;
-}
-
-#header_right {
-  display: flex;
-  align-items: center;
 }
 
 .header_link {
@@ -37,17 +45,19 @@ body {
   margin-left: 0px;
 }
 
+#header_right {
+  display: flex;
+  align-items: center;
+}
+
 #header_right .header_link {
   margin-right: 15px;
+  color: rgba(0, 0, 0, 0.87);
+  opacity: 1;
 }
 
 #header_right .header_link:last-child {
   margin-right: 10px;
-}
-
-#header_right .header_link {
-  color: rgba(0, 0, 0, 0.87);
-  opacity: 1;
 }
 
 #apps {
@@ -82,11 +92,6 @@ body {
   margin-bottom: 25px;
 }
 
-#search_field:hover,
-#search_field:active {
-  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-}
-
 #search_field {
   width: 100%;
   height: 45px;
@@ -99,6 +104,10 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
+}
+
+#search_field:hover, #search_field:active {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 
 #search_icon {
@@ -116,15 +125,14 @@ body {
   width: 100%;
 }
 
-#search_field_input,
-#search_field_input:focus {
-  border: none;
-  outline: none;
-}
-
 #search_field_input {
   font-size: 16px;
   width: 100%;
+}
+
+#search_field_input, #search_field_input:focus {
+  border: none;
+  outline: none;
 }
 
 #clear_icon {
@@ -179,23 +187,8 @@ body {
   color: #222;
 }
 
-.basic_text {
-  white-space: pre;
-  font-size: 14px;
-}
-
 #language_selection {
   color: #1a0dab;
-}
-
-a:link,
-a:active,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline currentcolor solid;
 }
 
 #language_selection:visited {
@@ -206,6 +199,16 @@ a:hover {
   width: 100%;
   background-color: #f2f2f2;
   line-height: 40px;
+}
+
+.footer_link {
+  color: #5f6368;
+  display: inline-block;
+  padding: 0px 14px;
+}
+
+.footer_link:active {
+  color: #dd4b39;
 }
 
 #country {
@@ -229,24 +232,4 @@ a:hover {
 #footer_general_right {
   float: right;
   text-align: center;
-}
-
-.footer_link {
-  color: #5f6368;
-  display: inline-block;
-  padding: 0px 14px;
-}
-
-.footer_link:active {
-  color: #dd4b39;
-}
-
-@media (max-width: 380px) {
-  #content {
-    margin-top: 50px;
-  }
-
-  #header {
-    display: none;
-  }
 }
