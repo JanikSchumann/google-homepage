@@ -35,7 +35,7 @@ window.addEventListener('load', function () {
   }
 
   function result_page() {
-    window.location.href = "http://127.0.0.1:3000/google-homepage/search-results.html";
+    window.location.href = "http://127.0.0.1:5500/search-results.html";
   }
 
 });
