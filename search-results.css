@@ -198,6 +198,25 @@ a:hover {
   color: #1a0dab;
 }
 
+#results {
+  max-width: 600px;
+}
+
+.result_website {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.result_translate {
+  font-size: 14px;
+  color: #1a0dab;
+}
+
+.result_translate span {
+  font-size: 10px;
+  color: grey;
+}
+
 #footer {
   width: 100%;
   background-color: #f2f2f2;
