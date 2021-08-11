@@ -3,8 +3,9 @@ body {
   margin: 0px;
 }
 
-a:link, a:active, a:visited {
+a, a:link, a:active, a:visited {
   text-decoration: none;
+  color: #1a0dab;
 }
 
 a:hover {
@@ -194,17 +195,17 @@ a:hover {
   font-size: 14px;
 }
 
-#tip a {
-  color: #1a0dab;
+.result {
+  margin-top: 15px;
 }
 
-#results {
-  max-width: 600px;
-}
-
-.result_website {
+.result_address {
   margin-top: 15px;
   font-size: 14px;
+}
+
+.result_address span {
+  opacity: 0.7;
 }
 
 .result_translate {
@@ -217,43 +218,14 @@ a:hover {
   color: grey;
 }
 
-#footer {
-  width: 100%;
-  background-color: #f2f2f2;
-  line-height: 40px;
-  position: fixed;
-  bottom: 0;
+.result_website {
+  margin-top: 5px;
+  font-size: 20px;
 }
 
-.footer_link {
-  color: #5f6368;
-  display: inline-block;
-  padding: 0px 14px;
-}
-
-.footer_link:active {
-  color: #dd4b39;
-}
-
-#country {
-  color: rgba(0, 0, 0, 0.54);
-  padding: 0px 28px;
-  font-size: 15px;
-  border-top: 1px solid rgb(228, 228, 228);
-  border-bottom: 1px solid #e4e4e4;
-}
-
-#footer_general {
+.result_description {
+  margin-top: 5px;
   font-size: 14px;
-  padding: 0px 14px;
-}
-
-#footer_general_left {
-  float: left;
-  text-align: center;
-}
-
-#footer_general_right {
-  float: right;
-  text-align: center;
+  line-height: 1.5;
+  opacity: 0.7;
 }
